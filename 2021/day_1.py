@@ -31,7 +31,7 @@ def count_window_increase(measurements: List[int]) -> int:
 
 
 @click.command()
-@click.option("--input_file", type=click.Path(), default="input1.txt")
+@click.option("--input_file", type=click.Path(), default="files/input1.txt")
 def cli(input_file: Path) -> None:
     with open(input_file) as file:
         measurements = [int(line) for line in file]
