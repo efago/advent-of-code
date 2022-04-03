@@ -19,9 +19,9 @@ def count_increase(measurements: List[int]) -> int:
 
 def count_window_increase(measurements: List[int]) -> int:
     increases = 0
-    previous = sum(measurements[: 3])
+    previous = sum(measurements[:3])
     for i in range(len(measurements) - 2):
-        current = sum(measurements[i: i + 3])
+        current = sum(measurements[i : i + 3])
         if current > previous:
             increases += 1
 
